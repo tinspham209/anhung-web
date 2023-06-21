@@ -3,7 +3,7 @@
 import ClientOnly from "@/components/providers/clientOnly";
 import { Box, Card, CardContent, Typography } from "@mui/material";
 
-export default function Home() {
+export default function GioiThieu() {
 	return (
 		<ClientOnly>
 			<Box>
@@ -11,8 +11,9 @@ export default function Home() {
 					sx={{
 						mb: 2,
 					}}
+					variant="h1"
 				>
-					Hello world
+					Giới Thiệu
 				</Typography>
 
 				<Card>
