@@ -23,4 +23,8 @@ export const ROUTE_LIST = [
 		label: "Phản hồi",
 		path: "/phan-hoi",
 	},
+	{
+		label: "Liên hệ",
+		path: "/lien-he",
+	},
 ];

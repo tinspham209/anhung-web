@@ -27,6 +27,7 @@ export function HeaderDesktop({}: Props) {
 				top: 0,
 				width: "100%",
 				zIndex: 99,
+				backgroundColor: "white",
 				borderBottom: `1px solid ${COLOR_CODE.BORDER}`,
 				backdropFilter: "blur(20px)",
 			}}

@@ -1,6 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
+import { useHover } from "usehooks-ts";
+import { COLOR_CODE } from "@/theme";
 
 type LogoProps = {
 	width: string;
@@ -262,6 +264,29 @@ export const LogoWhite = ({ width, height }: LogoProps) => {
 					<rect width="1754" height="479" fill="white" />
 				</clipPath>
 			</defs>
+		</svg>
+	);
+};
+
+export const ArrowRight = ({ width = "64px", height = "64px" }: LogoProps) => {
+	const hoverRef = useRef(null);
+	const isHover = useHover(hoverRef);
+	return (
+		<svg
+			ref={hoverRef}
+			width={width}
+			height={height}
+			viewBox="0 0 64 64"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<g id="ph:arrow-up-light">
+				<path
+					id="Vector"
+					d="M34.9394 51.0597C34.6585 50.7784 34.5007 50.3972 34.5007 49.9997C34.5007 49.6022 34.6585 49.2209 34.9394 48.9397L50.3769 33.4997L9.99936 33.4997C9.60153 33.4997 9.22 33.3417 8.9387 33.0604C8.65739 32.7791 8.49936 32.3975 8.49936 31.9997C8.49936 31.6019 8.65739 31.2203 8.9387 30.939C9.22 30.6577 9.60154 30.4997 9.99936 30.4997L50.3769 30.4997L34.9394 15.0597C34.6744 14.7753 34.5302 14.3992 34.537 14.0106C34.5439 13.622 34.7013 13.2513 34.9761 12.9764C35.2509 12.7016 35.6217 12.5442 36.0103 12.5373C36.3989 12.5305 36.775 12.6747 37.0594 12.9397L55.0594 30.9397C55.3403 31.2209 55.498 31.6022 55.498 31.9997C55.498 32.3972 55.3403 32.7784 55.0594 33.0597L37.0594 51.0597C36.7781 51.3406 36.3969 51.4984 35.9994 51.4984C35.6019 51.4984 35.2206 51.3406 34.9394 51.0597Z"
+					fill={isHover ? COLOR_CODE.SECONDARY : "#84919D"}
+				/>
+			</g>
 		</svg>
 	);
 };

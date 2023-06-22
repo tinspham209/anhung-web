@@ -96,7 +96,7 @@ export function HeaderMobile({}: Props) {
 									selected={pathname === route.path}
 								>
 									<MuiLink
-										sx={{ fontWeight: "medium", textTransform: "uppercase" }}
+										sx={{ fontWeight: "bold", textTransform: "uppercase" }}
 										underline="hover"
 										className={clsx({
 											active: pathname === route.path,

@@ -1,26 +1,39 @@
 "use client";
 
+import {
+	CoreValue,
+	Hero,
+	Highlight,
+	Member,
+	Outcome,
+	WorkingProcess,
+	TypicalProjects,
+	TypicalCustomers,
+	CustomerSays,
+} from "@/components/home";
+
 import ClientOnly from "@/components/providers/clientOnly";
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import {
+	Box,
+	Card,
+	CardContent,
+	Container,
+	Divider,
+	Typography,
+} from "@mui/material";
 
 export default function Home() {
 	return (
 		<ClientOnly>
-			<Box>
-				<Typography
-					sx={{
-						mb: 2,
-					}}
-				>
-					Hello world
-				</Typography>
-
-				<Card>
-					<CardContent>
-						<Typography>aaaa</Typography>
-					</CardContent>
-				</Card>
-			</Box>
+			<Hero />
+			<Member />
+			<Highlight />
+			<Outcome />
+			<CoreValue />
+			<WorkingProcess />
+			<TypicalProjects />
+			<TypicalCustomers />
+			<CustomerSays />
 		</ClientOnly>
 	);
 }

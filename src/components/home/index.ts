@@ -1,0 +1,9 @@
+export { default as Hero } from "./hero";
+export { default as Highlight } from "./highlight";
+export { default as Member } from "./member";
+export { default as Outcome } from "./outcome";
+export { default as CoreValue } from "./core-value";
+export { default as WorkingProcess } from "./working-process";
+export { default as TypicalProjects } from "./typical-projects";
+export { default as TypicalCustomers } from "./typical-customers";
+export { default as CustomerSays } from "./customer-says";

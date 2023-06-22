@@ -8,11 +8,11 @@ import {
 	ThemeOptions,
 	ThemeProvider,
 } from "@mui/material/styles";
-import { Roboto } from "next/font/google";
+import { Archivo } from "next/font/google";
 import { red } from "@mui/material/colors";
 import { COLOR_CODE } from ".";
 
-export const roboto = Roboto({
+export const roboto = Archivo({
 	weight: ["300", "400", "500", "700"],
 	style: ["normal", "italic"],
 	subsets: ["latin"],
@@ -60,6 +60,18 @@ const themeOptions: ThemeOptions = {
 					style: {
 						backgroundColor: COLOR_CODE.BACKGROUND,
 					},
+				},
+			},
+		},
+		MuiButton: {
+			defaultProps: {
+				variant: "contained",
+			},
+			styleOverrides: {
+				root: {
+					borderRadius: "24px",
+					padding: "8px 24px",
+					fontSize: "16px",
 				},
 			},
 		},
