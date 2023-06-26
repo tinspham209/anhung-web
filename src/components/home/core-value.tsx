@@ -1,4 +1,4 @@
-import { mediaBreakpoint } from "@/theme";
+import { COLOR_CODE, mediaBreakpoint } from "@/theme";
 import {
 	Box,
 	Container,
@@ -14,7 +14,7 @@ interface OutcomeProps {}
 const CoreValue: React.FC<OutcomeProps> = ({}) => {
 	const isTablet = useMediaQuery(mediaBreakpoint.TABLET);
 	return (
-		<Box component={"section"} bgcolor={"white"} py={8}>
+		<Box component={"section"} bgcolor={COLOR_CODE.BACKGROUND_DARK} py={8}>
 			<Container>
 				<Grid
 					container
@@ -34,7 +34,7 @@ const CoreValue: React.FC<OutcomeProps> = ({}) => {
 							<Typography
 								variant="h3"
 								fontWeight={"bold"}
-								color={"primary.main"}
+								color={"secondary.main"}
 								sx={{
 									ml: {
 										xs: 0,
@@ -66,7 +66,12 @@ const CoreValue: React.FC<OutcomeProps> = ({}) => {
 								>
 									Làm việc nhóm
 								</Typography>
-								<Typography variant="body1" mt={1} maxWidth={"382px"}>
+								<Typography
+									variant="body1"
+									color="white"
+									mt={1}
+									maxWidth={"382px"}
+								>
 									Thấu hiểu giá trị làm việc nhóm, cung nhau động viên khích lệ
 									nhau vượt qua khó khăn và hướng đến mục tiêu chung.
 								</Typography>
@@ -92,7 +97,12 @@ const CoreValue: React.FC<OutcomeProps> = ({}) => {
 								>
 									Tin cậy
 								</Typography>
-								<Typography variant="body1" mt={1} maxWidth={"336px"}>
+								<Typography
+									variant="body1"
+									color="white"
+									mt={1}
+									maxWidth={"336px"}
+								>
 									Là nền tảng để xây dựng mối quan hệ bền chặt dài lâu, là kim
 									chỉ nam cho mọi hoạt động của doanh nghiệp.
 								</Typography>
@@ -138,7 +148,12 @@ const CoreValue: React.FC<OutcomeProps> = ({}) => {
 								>
 									Tôn trọng
 								</Typography>
-								<Typography variant="body1" mt={1} maxWidth={"336px"}>
+								<Typography
+									variant="body1"
+									color="white"
+									mt={1}
+									maxWidth={"336px"}
+								>
 									Tôn trọng đối tác, tôn trọng khách hàng, tôn trọng cổ đông và
 									nhân viên
 								</Typography>
@@ -165,7 +180,12 @@ const CoreValue: React.FC<OutcomeProps> = ({}) => {
 								>
 									An toàn lao động
 								</Typography>
-								<Typography variant="body1" mt={1} maxWidth={"382px"}>
+								<Typography
+									variant="body1"
+									color="white"
+									mt={1}
+									maxWidth={"382px"}
+								>
 									Mọi rủi ro tiềm ẩn có thể ngăn chặn được tại dự án. Thực hiện
 									an toàn lao động mọi lúc mọi nơi đảm bảo trách nhiệm với cộng
 									đồng.

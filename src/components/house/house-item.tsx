@@ -67,6 +67,7 @@ const HouseItem: React.FC<HouseItemProps> = ({ project }) => {
 			<Typography
 				variant="body1"
 				sx={{
+					color: "white",
 					mb: 3,
 					height: 62,
 					display: "-webkit-box",

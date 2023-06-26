@@ -47,7 +47,7 @@ const Hero: React.FC<HeroProps> = ({}) => {
 							variant="h2"
 							textAlign={"end"}
 							fontWeight={"bold"}
-							color="white"
+							color="secondary.main"
 						>
 							Trụ cột nâng bước,
 							<br />

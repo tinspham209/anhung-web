@@ -36,7 +36,7 @@ export default function RootLayout({
 							</ClientOnly>
 							<div
 								style={{
-									marginTop: "72px",
+									marginTop: "64px",
 								}}
 							>
 								{children}

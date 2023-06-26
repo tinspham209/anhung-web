@@ -65,7 +65,7 @@ const TypicalCustomers: React.FC<TypicalCustomersProps> = ({}) => {
 				<Typography
 					variant="h3"
 					fontWeight={"bold"}
-					color={"primary.main"}
+					color={"secondary.main"}
 					textAlign={"center"}
 					mb={4}
 				>

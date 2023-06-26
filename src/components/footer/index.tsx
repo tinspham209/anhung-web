@@ -25,7 +25,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
 	return (
 		<Box>
 			<Divider />
-			<Box component={"footer"} bgcolor={COLOR_CODE.TEXT_50} pt={4} pb={3}>
+			<Box component={"footer"} bgcolor={COLOR_CODE.PRIMARY} pt={4} pb={3}>
 				<Container>
 					<Grid container spacing={3}>
 						<Grid item xs={12} md={6}>
@@ -56,7 +56,12 @@ const Footer: React.FC<FooterProps> = ({}) => {
 											label: `Email: anhungjsc.@gmail.com`,
 										},
 									].map((item) => (
-										<Typography variant="body1" key={item.label} mb={1}>
+										<Typography
+											variant="body1"
+											key={item.label}
+											mb={1}
+											color="white"
+										>
 											{item.label}
 										</Typography>
 									))}
@@ -68,6 +73,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
 								{ROUTE_LIST.map((route) => (
 									<MuiLink
 										sx={{
+											color: "white",
 											mb: 1,
 											fontWeight: "bold",
 											fontSize: 16,
@@ -88,7 +94,19 @@ const Footer: React.FC<FooterProps> = ({}) => {
 							</Stack>
 						</Grid>
 						<Grid item xs={12} md={2}>
-							<Stack flexDirection={"row"}>
+							<Stack
+								flexDirection={"row"}
+								sx={{
+									"& svg": {
+										color: "white",
+										cursor: "pointer",
+
+										"&:hover": {
+											color: COLOR_CODE.SECONDARY,
+										},
+									},
+								}}
+							>
 								<Facebook
 									fontSize="large"
 									sx={{
@@ -113,7 +131,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
 							md: "center",
 						}}
 					>
-						<Typography>
+						<Typography color="white">
 							© Copyright 2016-{format(new Date(), "yyyy")}. Bản quyền nội dung
 							thuộc An Hưng.
 						</Typography>

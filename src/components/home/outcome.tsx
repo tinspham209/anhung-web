@@ -17,7 +17,7 @@ const Outcome: React.FC<OutcomeProps> = ({}) => {
 	return (
 		<Box
 			component={"section"}
-			bgcolor={COLOR_CODE.TEXT_50}
+			bgcolor={COLOR_CODE.PRIMARY}
 			py={{
 				xs: 6,
 				md: 18,
@@ -30,13 +30,13 @@ const Outcome: React.FC<OutcomeProps> = ({}) => {
 							<Typography
 								variant="h3"
 								fontWeight={"bold"}
-								color={"primary.main"}
+								color={"secondary.main"}
 							>
 								Tất cả vì những
 								<br /> công trình bền đẹp
 								<br /> cho tương lai
 							</Typography>
-							<Typography variant="body1" mt={3} color={COLOR_CODE.TEXT_MAIN}>
+							<Typography variant="body1" mt={3} color={COLOR_CODE.WHITE}>
 								Trong những năm tới, Công ty Cổ phần Đầu tư Xây dựng Kiến trúc
 								An Hưng đặt mục tiêu tăng trưởng và phát triển để trở thành công
 								ty hàng đầu trong lĩnh vực xây dựng tại Việt Nam, đảm bảo tổ
@@ -44,7 +44,15 @@ const Outcome: React.FC<OutcomeProps> = ({}) => {
 								thị trường.
 							</Typography>
 							<Box>
-								<Stack flexDirection={"row"} mt={3}>
+								<Stack
+									flexDirection={"row"}
+									mt={3}
+									sx={{
+										"& svg": {
+											color: "white",
+										},
+									}}
+								>
 									<Phone fontSize="medium" />
 									<MuiLink
 										sx={{
@@ -54,7 +62,7 @@ const Outcome: React.FC<OutcomeProps> = ({}) => {
 											"&:hover": {
 												color: "secondary.main",
 											},
-											color: COLOR_CODE.TEXT_MAIN,
+											color: "white",
 										}}
 										href={`/lien-he`}
 										component={Link}

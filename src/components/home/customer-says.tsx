@@ -36,12 +36,12 @@ const CustomerSays: React.FC<CustomerSaysProps> = ({}) => {
 	}, []);
 
 	return (
-		<Box component={"section"} bgcolor={"white"} py={8}>
+		<Box component={"section"} bgcolor={COLOR_CODE.BACKGROUND_DARK} py={8}>
 			<Container maxWidth="md">
 				<Typography
 					variant="h3"
 					fontWeight={"bold"}
-					color={"primary.main"}
+					color={"secondary.main"}
 					textAlign={"center"}
 					mb={4}
 				>
@@ -88,13 +88,15 @@ const CustomerSays: React.FC<CustomerSaysProps> = ({}) => {
 									justifyContent={"center"}
 								>
 									<Box>
-										<Typography variant="body1" mb={3}>
+										<Typography variant="body1" mb={3} color="white">
 											{item.description}
 										</Typography>
 										<Typography variant="h6" mb={1} color="secondary.main">
 											{item.personName}
 										</Typography>
-										<Typography variant="body1">{item.personTitle}</Typography>
+										<Typography variant="body1" color="white">
+											{item.personTitle}
+										</Typography>
 									</Box>
 								</Stack>
 							</Grid>

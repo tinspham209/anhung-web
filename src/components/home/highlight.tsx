@@ -2,7 +2,7 @@ import { Box, Container, useMediaQuery } from "@mui/material";
 import React from "react";
 
 import Carousel from "@/components/carousel";
-import { mediaBreakpoint } from "@/theme";
+import { COLOR_CODE, mediaBreakpoint } from "@/theme";
 import Image from "next/image";
 
 const options = [
@@ -27,7 +27,8 @@ const Highlight: React.FC<HighlightProps> = ({}) => {
 	return (
 		<Box
 			component={"section"}
-			my={10}
+			py={10}
+			bgcolor={COLOR_CODE.BACKGROUND_DARK}
 			sx={{
 				"& .carousel": {
 					overflowY: "clip",

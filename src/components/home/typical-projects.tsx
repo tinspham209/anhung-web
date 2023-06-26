@@ -1,5 +1,5 @@
 import Houses from "@/components/house";
-import { mediaBreakpoint } from "@/theme";
+import { COLOR_CODE, mediaBreakpoint } from "@/theme";
 import { Box, Container, Typography, useMediaQuery } from "@mui/material";
 interface TypicalProjectsProps {}
 
@@ -31,12 +31,12 @@ const projects = [
 const TypicalProjects: React.FC<TypicalProjectsProps> = ({}) => {
 	const isTablet = useMediaQuery(mediaBreakpoint.TABLET);
 	return (
-		<Box component={"section"} bgcolor={"white"} py={8}>
+		<Box component={"section"} bgcolor={COLOR_CODE.BACKGROUND_DARK} py={8}>
 			<Container>
 				<Typography
 					variant="h3"
 					fontWeight={"bold"}
-					color={"primary.main"}
+					color={"secondary.main"}
 					textAlign={"center"}
 					mb={4}
 				>

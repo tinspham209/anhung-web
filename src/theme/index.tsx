@@ -5,6 +5,7 @@ export const COLOR_CODE = {
 	WHITE: "rgba(255, 255, 255, 0.92)",
 	BACKGROUND: "rgb(250, 250, 251)",
 	TEXT_DARK: "rgba(38, 38, 38, 1)",
+	BACKGROUND_DARK: "#11273F",
 
 	TEXT_10: "#84919d",
 	TEXT_50: "#ebedf0",

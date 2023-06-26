@@ -49,7 +49,7 @@ const themeOptions: ThemeOptions = {
 					color: "inherit",
 
 					"&:hover, &.active": {
-						color: COLOR_CODE.PRIMARY,
+						color: COLOR_CODE.SECONDARY,
 					},
 				},
 			},
@@ -58,7 +58,7 @@ const themeOptions: ThemeOptions = {
 			defaultProps: {
 				PaperProps: {
 					style: {
-						backgroundColor: COLOR_CODE.BACKGROUND,
+						backgroundColor: COLOR_CODE.PRIMARY,
 					},
 				},
 			},
@@ -72,6 +72,11 @@ const themeOptions: ThemeOptions = {
 					borderRadius: "24px",
 					padding: "8px 24px",
 					fontSize: "16px",
+				},
+				containedPrimary: {
+					"&:hover": {
+						color: COLOR_CODE.SECONDARY,
+					},
 				},
 			},
 		},

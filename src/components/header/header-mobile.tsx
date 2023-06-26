@@ -1,4 +1,4 @@
-import { Logo, LogoOnly } from "@/components/icons";
+import { Logo, LogoOnly, LogoWhite } from "@/components/icons";
 import { COLOR_CODE } from "@/theme";
 import MenuIcon from "@mui/icons-material/Menu";
 import {
@@ -50,7 +50,7 @@ export function HeaderMobile({}: Props) {
 				position: "fixed",
 				top: 0,
 				width: "100%",
-				backgroundColor: COLOR_CODE.WHITE,
+				backgroundColor: COLOR_CODE.PRIMARY,
 				zIndex: 99,
 				borderBottom: `1px solid ${COLOR_CODE.BORDER}`,
 				backdropFilter: "blur(20px)",
@@ -63,14 +63,14 @@ export function HeaderMobile({}: Props) {
 					alignItems="center"
 				>
 					<Link href={"/"} passHref>
-						<Logo width="132px" height="36px" />
+						<LogoWhite width="132px" height="36px" />
 					</Link>
 					<IconButton
 						onClick={toggleDrawer(true)}
 						onKeyDown={toggleDrawer(true)}
 						sx={{
 							"& svg": {
-								color: COLOR_CODE.TEXT_DARK,
+								color: COLOR_CODE.WHITE,
 							},
 						}}
 					>
@@ -96,7 +96,11 @@ export function HeaderMobile({}: Props) {
 									selected={pathname === route.path}
 								>
 									<MuiLink
-										sx={{ fontWeight: "bold", textTransform: "uppercase" }}
+										sx={{
+											fontWeight: "bold",
+											textTransform: "uppercase",
+											color: "white",
+										}}
 										underline="hover"
 										className={clsx({
 											active: pathname === route.path,

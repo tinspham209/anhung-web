@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import React from "react";
 import { ROUTE_LIST } from "./routes";
-import { Logo } from "../icons";
+import { Logo, LogoWhite } from "../icons";
 
 type Props = {};
 
@@ -27,7 +27,7 @@ export function HeaderDesktop({}: Props) {
 				top: 0,
 				width: "100%",
 				zIndex: 99,
-				backgroundColor: "white",
+				backgroundColor: `${COLOR_CODE.PRIMARY}`,
 				borderBottom: `1px solid ${COLOR_CODE.BORDER}`,
 				backdropFilter: "blur(20px)",
 			}}
@@ -39,7 +39,7 @@ export function HeaderDesktop({}: Props) {
 					alignItems={"center"}
 				>
 					<Link href={"/"} passHref>
-						<Logo width={"176px"} height={"48px"} />
+						<LogoWhite width={"176px"} height={"48px"} />
 					</Link>
 					<Box>
 						{routeList.map((route, index) => (
@@ -49,6 +49,7 @@ export function HeaderDesktop({}: Props) {
 									fontWeight: "bold",
 									fontSize: 16,
 									textTransform: "uppercase",
+									color: "white",
 									"&:hover": {
 										color: "secondary.main",
 									},

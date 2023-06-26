@@ -9,7 +9,7 @@ const WorkingProcess: React.FC<OutcomeProps> = ({}) => {
 	return (
 		<Box
 			component={"section"}
-			bgcolor={COLOR_CODE.TEXT_50}
+			bgcolor={COLOR_CODE.PRIMARY}
 			py={{
 				xs: 6,
 				md: 8,
@@ -19,7 +19,7 @@ const WorkingProcess: React.FC<OutcomeProps> = ({}) => {
 				<Typography
 					variant="h3"
 					fontWeight={"bold"}
-					color={"primary.main"}
+					color={"secondary.main"}
 					mb={6}
 				>
 					Quy trình làm việc
@@ -111,7 +111,9 @@ const WorkingProcess: React.FC<OutcomeProps> = ({}) => {
 									>
 										Bước {index + 1}
 									</Typography>
-									<Typography variant="body1">{item.description}</Typography>
+									<Typography variant="body1" color="white">
+										{item.description}
+									</Typography>
 								</Box>
 							</Stack>
 						);

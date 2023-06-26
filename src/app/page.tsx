@@ -2,25 +2,17 @@
 
 import {
 	CoreValue,
+	CustomerSays,
 	Hero,
 	Highlight,
 	Member,
 	Outcome,
-	WorkingProcess,
-	TypicalProjects,
 	TypicalCustomers,
-	CustomerSays,
+	TypicalProjects,
+	WorkingProcess,
 } from "@/components/home";
 
 import ClientOnly from "@/components/providers/clientOnly";
-import {
-	Box,
-	Card,
-	CardContent,
-	Container,
-	Divider,
-	Typography,
-} from "@mui/material";
 
 export default function Home() {
 	return (
