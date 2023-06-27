@@ -17,7 +17,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import { ROUTE_LIST } from "../header/routes";
-import { Logo } from "../icons";
+import { Logo, LogoWhite } from "../icons";
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = ({}) => {
@@ -35,7 +35,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
 								height="100%"
 								pb={2}
 							>
-								<Logo width="205px" height="56px" />
+								<LogoWhite width="205px" height="56px" />
 
 								<Box
 									sx={{

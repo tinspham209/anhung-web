@@ -1,4 +1,4 @@
-import { Logo, LogoOnly, LogoWhite } from "@/components/icons";
+import { LogoWhite } from "@/components/icons";
 import { COLOR_CODE } from "@/theme";
 import MenuIcon from "@mui/icons-material/Menu";
 import {
@@ -14,14 +14,13 @@ import {
 } from "@mui/material";
 import clsx from "clsx";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { ROUTE_LIST } from "./routes";
-import { useRouter, usePathname } from "next/navigation";
 type Props = {};
 
 export function HeaderMobile({}: Props) {
 	const [open, setOpen] = React.useState(false);
-	const router = useRouter();
 	const pathname = usePathname();
 
 	const [isLoading, setIsLoading] = React.useState(false);
@@ -49,10 +48,11 @@ export function HeaderMobile({}: Props) {
 			sx={{
 				position: "fixed",
 				top: 0,
+				left: 0,
 				width: "100%",
 				backgroundColor: COLOR_CODE.PRIMARY,
 				zIndex: 99,
-				borderBottom: `1px solid ${COLOR_CODE.BORDER}`,
+				borderBottom: `1px solid ${COLOR_CODE.BACKGROUND_DARK}`,
 				backdropFilter: "blur(20px)",
 			}}
 		>
@@ -74,7 +74,7 @@ export function HeaderMobile({}: Props) {
 							},
 						}}
 					>
-						<MenuIcon />
+						<MenuIcon fontSize="large" />
 					</IconButton>
 				</Stack>
 				<Drawer anchor={"right"} open={open} onClose={toggleDrawer(false)}>

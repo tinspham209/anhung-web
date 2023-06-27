@@ -13,19 +13,22 @@ import {
 } from "@/components/home";
 
 import ClientOnly from "@/components/providers/clientOnly";
+import { Box } from "@mui/material";
 
 export default function Home() {
 	return (
 		<ClientOnly>
-			<Hero />
-			<Member />
-			<Highlight />
-			<Outcome />
-			<CoreValue />
-			<WorkingProcess />
-			<TypicalProjects />
-			<TypicalCustomers />
-			<CustomerSays />
+			<Box component="main">
+				<Hero />
+				<Member />
+				<Highlight />
+				<Outcome />
+				<CoreValue />
+				<WorkingProcess />
+				<TypicalProjects />
+				<TypicalCustomers />
+				<CustomerSays />
+			</Box>
 		</ClientOnly>
 	);
 }

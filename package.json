@@ -25,6 +25,8 @@
 		"react-dom": "18.2.0",
 		"react-hook-form": "^7.45.0",
 		"react-hot-toast": "^2.4.1",
+		"react-pageflip": "^2.0.3",
+		"react-pdf": "^7.1.2",
 		"react-responsive-carousel": "^3.2.23",
 		"react-swipeable-views": "^0.14.0",
 		"react-swipeable-views-utils": "^0.14.0",

@@ -1,17 +1,15 @@
 import { COLOR_CODE } from "@/theme";
 import { Box, Container, Link as MuiLink, Stack } from "@mui/material";
 import clsx from "clsx";
-import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import React from "react";
+import { LogoWhite } from "../icons";
 import { ROUTE_LIST } from "./routes";
-import { Logo, LogoWhite } from "../icons";
 
 type Props = {};
 
 export function HeaderDesktop({}: Props) {
-	const router = useRouter();
 	const pathname = usePathname();
 
 	const routeList = React.useMemo(() => {
@@ -28,7 +26,7 @@ export function HeaderDesktop({}: Props) {
 				width: "100%",
 				zIndex: 99,
 				backgroundColor: `${COLOR_CODE.PRIMARY}`,
-				borderBottom: `1px solid ${COLOR_CODE.BORDER}`,
+				borderBottom: `1px solid ${COLOR_CODE.BACKGROUND_DARK}`,
 				backdropFilter: "blur(20px)",
 			}}
 		>

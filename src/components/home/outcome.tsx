@@ -11,16 +11,18 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-interface OutcomeProps {}
+interface OutcomeProps {
+	bgColor?: string;
+}
 
-const Outcome: React.FC<OutcomeProps> = ({}) => {
+const Outcome: React.FC<OutcomeProps> = ({ bgColor = COLOR_CODE.PRIMARY }) => {
 	return (
 		<Box
 			component={"section"}
-			bgcolor={COLOR_CODE.PRIMARY}
+			bgcolor={bgColor}
 			py={{
 				xs: 6,
-				md: 18,
+				md: 14,
 			}}
 		>
 			<Container>
@@ -36,7 +38,7 @@ const Outcome: React.FC<OutcomeProps> = ({}) => {
 								<br /> công trình bền đẹp
 								<br /> cho tương lai
 							</Typography>
-							<Typography variant="body1" mt={3} color={COLOR_CODE.WHITE}>
+							<Typography variant="h6" mt={3} color={COLOR_CODE.WHITE}>
 								Trong những năm tới, Công ty Cổ phần Đầu tư Xây dựng Kiến trúc
 								An Hưng đặt mục tiêu tăng trưởng và phát triển để trở thành công
 								ty hàng đầu trong lĩnh vực xây dựng tại Việt Nam, đảm bảo tổ
